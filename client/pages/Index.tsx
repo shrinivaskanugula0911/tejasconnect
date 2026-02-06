@@ -1,27 +1,11 @@
-import { ArrowRight, Zap, Users, TrendingUp, MessageSquare, BookOpen } from 'lucide-react';
+import { ArrowRight, Users, TrendingUp, MessageSquare, BookOpen } from 'lucide-react';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export default function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* Header/Navigation */}
-      <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F57d9ad027eda4a5381433d555f15e3ef%2F85423baee08f4b96b5be72c0fbd1d7d5"
-              alt="Tejas Connect Logo"
-              className="w-10 h-10 object-contain"
-            />
-            <span className="text-2xl font-bold text-foreground">Tejas Connect</span>
-          </div>
-          <nav className="hidden md:flex gap-8">
-            <a href="#about" className="text-foreground hover:text-accent transition-colors duration-150">About</a>
-            <a href="#who" className="text-foreground hover:text-accent transition-colors duration-150">Who</a>
-            <a href="#how" className="text-foreground hover:text-accent transition-colors duration-150">How</a>
-            <a href="#involved" className="text-foreground hover:text-accent transition-colors duration-150">Get Involved</a>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section className="py-20 sm:py-28 lg:py-32 px-4 sm:px-6 lg:px-8">
@@ -252,49 +236,7 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-border bg-card/50 py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
-            <div>
-              <h3 className="text-xl font-bold text-accent mb-4">Tejas Connect</h3>
-              <p className="text-muted-foreground max-w-xs">
-                Bridging the gap between academic learning and real-world startup experience through meaningful campus connections.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-muted-foreground">
-                <li>
-                  <a href="#about" className="hover:text-accent transition-colors duration-150">About</a>
-                </li>
-                <li>
-                  <a href="#who" className="hover:text-accent transition-colors duration-150">Who We Serve</a>
-                </li>
-                <li>
-                  <a href="#how" className="hover:text-accent transition-colors duration-150">How It Works</a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Contact</h4>
-              <ul className="space-y-2 text-muted-foreground">
-                <li>
-                  <a href="mailto:team@tejasconnect.com" className="hover:text-accent transition-colors duration-150">team@tejasconnect.com</a>
-                </li>
-                <li className="pt-4 mt-4 border-t border-border">
-                  <a href="#" className="hover:text-accent transition-colors duration-150 text-sm">Twitter</a>
-                  <span className="text-border mx-2">•</span>
-                  <a href="#" className="hover:text-accent transition-colors duration-150 text-sm">LinkedIn</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-border pt-8 text-center text-muted-foreground text-sm">
-            <p>&copy; 2026 Tejas Connect. Built to connect, inspire, and empower.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
