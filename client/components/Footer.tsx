@@ -18,10 +18,13 @@ export default function Footer() {
                 <Link to="/about" className="hover:text-accent transition-colors duration-150">About</Link>
               </li>
               <li>
-                <a href="/#who" className="hover:text-accent transition-colors duration-150">Who We Serve</a>
+                <Link to="/?section=who" className="hover:text-accent transition-colors duration-150">Who We Serve</Link>
               </li>
               <li>
-                <a href="/#how" className="hover:text-accent transition-colors duration-150">How It Works</a>
+                <Link to="/?section=how" className="hover:text-accent transition-colors duration-150">How It Works</Link>
+              </li>
+              <li>
+                <Link to="/?section=involved" className="hover:text-accent transition-colors duration-150">Get Involved</Link>
               </li>
             </ul>
           </div>
@@ -32,9 +35,11 @@ export default function Footer() {
                 <a href="mailto:team@tejasconnect.com" className="hover:text-accent transition-colors duration-150">team@tejasconnect.com</a>
               </li>
               <li className="pt-4 mt-4 border-t border-border">
-                <a href="#" className="hover:text-accent transition-colors duration-150 text-sm">Twitter</a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors duration-150 text-sm">Twitter</a>
                 <span className="text-border mx-2">•</span>
-                <a href="#" className="hover:text-accent transition-colors duration-150 text-sm">LinkedIn</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors duration-150 text-sm">LinkedIn</a>
+                <span className="text-border mx-2">•</span>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors duration-150 text-sm">Instagram</a>
               </li>
             </ul>
           </div>

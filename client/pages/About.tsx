@@ -1,8 +1,10 @@
 import { Zap, Users, Lightbulb, Handshake } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { useScrollToTop } from '@/hooks/useScrollToTop';
 
 export default function About() {
+  useScrollToTop();
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Header />

@@ -1,8 +1,26 @@
+import { useEffect } from 'react';
 import { ArrowRight, Users, TrendingUp, MessageSquare, BookOpen } from 'lucide-react';
+import { Link, useSearchParams } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { useScrollToTop } from '@/hooks/useScrollToTop';
 
 export default function Index() {
+  const [searchParams] = useSearchParams();
+  useScrollToTop();
+
+  useEffect(() => {
+    const section = searchParams.get('section');
+    if (section) {
+      const element = document.getElementById(section);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    }
+  }, [searchParams]);
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Header />
@@ -17,14 +35,14 @@ export default function Index() {
             Bridge the gap between academic learning and real-world entrepreneurship. Connect founders, students, and institutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-3 bg-accent text-accent-foreground rounded-lg font-semibold hover:opacity-90 transition-opacity duration-150 flex items-center justify-center gap-2">
+            <Link to="/for-founders" className="px-8 py-3 bg-accent text-accent-foreground rounded-lg font-semibold hover:opacity-90 transition-opacity duration-150 flex items-center justify-center gap-2">
               For Founders
               <ArrowRight size={20} />
-            </button>
-            <button className="px-8 py-3 bg-secondary text-secondary-foreground rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-150 flex items-center justify-center gap-2">
+            </Link>
+            <Link to="/for-colleges-students" className="px-8 py-3 bg-secondary text-secondary-foreground rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-150 flex items-center justify-center gap-2">
               For Colleges & Students
               <ArrowRight size={20} />
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -224,14 +242,14 @@ export default function Index() {
             Ready to be part of the Tejas Connect community? Whether you're a founder, student, or institution, we'd love to hear from you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-3 bg-accent text-accent-foreground rounded-lg font-semibold hover:opacity-90 transition-opacity duration-150 flex items-center justify-center gap-2">
+            <Link to="/get-involved" className="px-8 py-3 bg-accent text-accent-foreground rounded-lg font-semibold hover:opacity-90 transition-opacity duration-150 flex items-center justify-center gap-2">
               <MessageSquare size={20} />
               Get in Touch
-            </button>
-            <button className="px-8 py-3 bg-secondary text-secondary-foreground rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-150 flex items-center justify-center gap-2">
+            </Link>
+            <Link to="/about" className="px-8 py-3 bg-secondary text-secondary-foreground rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-150 flex items-center justify-center gap-2">
               Learn More
               <ArrowRight size={20} />
-            </button>
+            </Link>
           </div>
         </div>
       </section>
