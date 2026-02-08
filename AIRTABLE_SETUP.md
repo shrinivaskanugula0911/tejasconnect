@@ -63,8 +63,8 @@ You need to create three tables with the following structure:
 1. Copy `.env.example` to `.env.local`
 2. Add your Airtable credentials:
    ```
-   VITE_AIRTABLE_API_KEY=your_api_key_here
-   VITE_AIRTABLE_BASE_ID=your_base_id_here
+   VITE_AIRTABLE_API_KEY=patafEG0bR6XB7IB5.2d5dcb52c0ab5f5c37da7a8e3a52eef95ad4dcbc74cda68deb58869044d33d6f
+   VITE_AIRTABLE_BASE_ID=appAK6Sy9XtNgju2X/tblfITrCQao1v5qxx/viwS7q8S3PATkvwJF?blocks=hide
    ```
 3. Save the file
 
