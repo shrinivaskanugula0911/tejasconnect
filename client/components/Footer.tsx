@@ -35,8 +35,6 @@ export default function Footer() {
                 <a href="mailto:team@tejasconnect.in" className="hover:text-accent transition-colors duration-150">team@tejasconnect.in</a>
               </li>
               <li className="pt-4 mt-4 border-t border-border">
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors duration-150 text-sm">Twitter</a>
-                <span className="text-border mx-2">•</span>
                 <a href="https://linkedin.com/company/tejas-connect/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors duration-150 text-sm">LinkedIn</a>
                 <span className="text-border mx-2">•</span>
                 <a href="https://www.instagram.com/tejasconnect?igsh=cWNhenlyN3NydHNh" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors duration-150 text-sm">Instagram</a>
