@@ -15,7 +15,7 @@ export default function Header() {
         </Link>
         <nav className="hidden md:flex gap-8">
           <Link to="/about" className="text-foreground hover:text-accent transition-colors duration-150">About</Link>
-          <Link to="/#who" className="text-foreground hover:text-accent transition-colors duration-150">Who</Link>
+          <Link to="/?section=who" className="text-foreground hover:text-accent transition-colors duration-150">Who</Link>
           <Link to="/#how" className="text-foreground hover:text-accent transition-colors duration-150">How</Link>
           <Link to="/#involved" className="text-foreground hover:text-accent transition-colors duration-150">Get Involved</Link>
         </nav>
