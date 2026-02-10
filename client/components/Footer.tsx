@@ -37,7 +37,7 @@ export default function Footer() {
               <li className="pt-4 mt-4 border-t border-border">
                 <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors duration-150 text-sm">Twitter</a>
                 <span className="text-border mx-2">•</span>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors duration-150 text-sm">LinkedIn</a>
+                <a href="https://linkedin.com/company/tejas-connect/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors duration-150 text-sm">LinkedIn</a>
                 <span className="text-border mx-2">•</span>
                 <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors duration-150 text-sm">Instagram</a>
               </li>
