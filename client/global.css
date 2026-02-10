@@ -84,3 +84,10 @@
     white-space: pre;
   }
 }
+
+@font-face {
+  font-family: 'Agale';
+  src: url('/fonts/Agale.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
