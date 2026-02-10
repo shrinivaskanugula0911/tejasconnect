@@ -17,7 +17,7 @@ export default function Header() {
           <Link to="/about" className="text-foreground hover:text-accent transition-colors duration-150">About</Link>
           <Link to="/?section=who" className="text-foreground hover:text-accent transition-colors duration-150">Who</Link>
           <Link to="/?section=how" className="text-foreground hover:text-accent transition-colors duration-150">How</Link>
-          <Link to="/#involved" className="text-foreground hover:text-accent transition-colors duration-150">Get Involved</Link>
+          <Link to="/?section=involved" className="text-foreground hover:text-accent transition-colors duration-150">Get Involved</Link>
         </nav>
       </div>
     </header>
