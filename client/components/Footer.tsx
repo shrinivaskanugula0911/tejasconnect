@@ -32,7 +32,7 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-muted-foreground">
               <li>
-                <a href="mailto:team@tejasconnect.com" className="hover:text-accent transition-colors duration-150">team@tejasconnect.com</a>
+                <a href="mailto:team@tejasconnect.in" className="hover:text-accent transition-colors duration-150">team@tejasconnect.in</a>
               </li>
               <li className="pt-4 mt-4 border-t border-border">
                 <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors duration-150 text-sm">Twitter</a>
