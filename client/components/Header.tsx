@@ -11,7 +11,7 @@ export default function Header() {
             className="h-10 object-contain"
             style={{ width: '30px' }}
           />
-          <span className="text-2xl font-agale text-[#7F2CF6]">tejas</span>
+          <span className="text-4x2 font-agale text-[#7F2CF6]">tejas</span>
         </Link>
         <nav className="hidden md:flex gap-8">
           <Link to="/about" className="text-foreground hover:text-accent transition-colors duration-150">About</Link>
