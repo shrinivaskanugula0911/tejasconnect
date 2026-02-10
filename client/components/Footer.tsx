@@ -39,7 +39,7 @@ export default function Footer() {
                 <span className="text-border mx-2">•</span>
                 <a href="https://linkedin.com/company/tejas-connect/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors duration-150 text-sm">LinkedIn</a>
                 <span className="text-border mx-2">•</span>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors duration-150 text-sm">Instagram</a>
+                <a href="https://www.instagram.com/tejasconnect?igsh=cWNhenlyN3NydHNh" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors duration-150 text-sm">Instagram</a>
               </li>
             </ul>
           </div>
