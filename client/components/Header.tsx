@@ -8,10 +8,8 @@ export default function Header() {
           <img
             src="/tejas-connect-logo.png"
             alt="Tejas Connect Logo"
-            className="h-10 object-contain"
-            style={{ width: '30px' }}
+            className="h-16 object-contain"
           />
-          <span className="text-2x1 font-agale text-[#7F2CF6]">tejas.</span>
         </Link>
         <nav className="hidden md:flex gap-8">
           <Link to="/about" className="text-foreground hover:text-accent transition-colors duration-150">About</Link>
