@@ -8,7 +8,7 @@ export default function Header() {
           <img
             src="/tejas-connect-logo.png"
             alt="Tejas Connect Logo"
-            className="h-16 object-contain"
+            className="h-20 object-contain"
           />
         </Link>
         <nav className="hidden md:flex gap-8">
